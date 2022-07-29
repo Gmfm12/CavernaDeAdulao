@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { MdOutlineEmail } from 'react-icons/md';
-import './contact.css';
+import './contato.css';
 
-const Contact = () => {
+const Contato = () => {
   const [message, setMessage] = useState(false);
   const formRef = useRef();
   const handleSubmit = (e) => {
@@ -11,10 +11,10 @@ const Contact = () => {
     setMessage(true);
     emailjs
       .sendForm(
-        'service_k2qawqh',
-        'template_c6rkpn6',
+        '',
+        '',
         formRef.current,
-        'X7K7ebhIeOy3YwHki'
+        ''
       )
       .then(
         (result) => {
@@ -28,7 +28,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section id="contact">
+    <section id="contato">
       <h5>"Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará." Sl 91:1</h5>
       <h2>Contatos</h2>
       <div className="container contact__container">
@@ -60,7 +60,7 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
-            Send Message
+            Enviar
           </button>
           {message && <span>Obrigado, respoderemos em breve:)</span>}
         </form>
@@ -69,4 +69,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contato;

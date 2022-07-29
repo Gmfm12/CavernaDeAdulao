@@ -1,10 +1,10 @@
 import React from 'react';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
-import './experience.css';
+import './comoajudar.css';
 
 const Experience = () => {
   return (
-    <section id="experience">
+    <section id="como-ajudar">
       <h5>"O homem generoso será abençoado, porquanto reparte seu pão com o necessitado."</h5>
       <h5>PV 22:9</h5>
       <h2>Como Ajudar:</h2>

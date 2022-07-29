@@ -2,11 +2,11 @@ import React from 'react';
 import { FaAward } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
 import principal from '../../assets/imgprincipal.jpg';
-import './intro.css';
+import './sobre.css';
 
 const Intro = () => {
   return (
-    <section id="about">
+    <section id="sobre">
       <h2>Sobre o Projeto "Caverna de Adulão"</h2>
       <div className="container about__container">
         <div className="about__me">
