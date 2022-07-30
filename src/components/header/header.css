@@ -26,23 +26,6 @@ header {
     margin-right: auto;
 }
 
-.header__socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 5rem;
-  bottom: 1rem;
-}
-
-.header__socials::after {
-  content: '';
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
-
 .scroll__down {
   position: absolute;
   right: 5rem;
@@ -62,13 +45,3 @@ header {
   }
 }
 
-@media screen and (max-width: 600px){
-  header {
-    height: 100vh;
-  }
-
-  .header__socials,
-  .scroll__down {
-    display: none;
-  }
-}

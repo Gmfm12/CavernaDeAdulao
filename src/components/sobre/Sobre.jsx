@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaAward } from 'react-icons/fa';
-import { VscFolderLibrary } from 'react-icons/vsc';
+import { MdConstruction } from 'react-icons/md';
+import { RiHandCoinLine } from 'react-icons/ri';
 import principal from '../../assets/imgprincipal.jpg';
 import './sobre.css';
 
@@ -17,12 +17,13 @@ const Intro = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Expectativa de início dos trabalhos:</h5>
-              <small>2023</small>
+              <RiHandCoinLine className="about__icon" />
+              <h5>PIX:</h5>
+              <small>cavernadeadulaoct@gmail.com</small>
+              <p><small>Natanael D. T. Freitas</small></p>
             </article>
             <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
+              <MdConstruction className="about__icon" />
               <h5>Necessidades para o Projeto:</h5>
               <small>Patrocinadores para construção da estrutura.</small>
             </article>
@@ -30,7 +31,7 @@ const Intro = () => {
           <p>Há anos o desejo do nosso coração é montar uma Comunidade Terapêutica com voltada para a recuperação de dependentes químicos e de álcool.</p>
           <p>Este ano, como resposta deste desejo, conseguimos adquirir um terreno na região da Velha Grande, um dos locais mais atingidos pelo tráfico de drogas.</p>
           <p>Para dar uma resposta à essa prevalência de usuários e famílias aflitas, atingidas pelo tráfico no local, contamos com a ajuda de toda a comunidade Blumenauense para levantar recursos, afim de construir uma estrutura de acolhimento e, consequentemente, ajudar os que estão se perdendo.</p>
-          <a href="#contact" className="btn btn-primary">Gostaria de ajudar?</a>
+          <a href="#contato" className="btn btn-primary">Gostaria de ajudar?</a>
         </div>
       </div>
     </section>

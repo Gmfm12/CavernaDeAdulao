@@ -25,7 +25,7 @@ footer a {
     margin: 0 auto 3rem;
 }
 
-.footer__socials {
+/* .footer__socials {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -45,7 +45,7 @@ footer a {
     background: transparent;
     color: var(--color-bg);
     border-color: var(--color-bg);
-}
+} */
 
 .footer__copyright {
     margin-bottom: 4rem;
@@ -58,7 +58,7 @@ footer a {
         gap: 1.5rem;
     }
 
-    .footer__socials {
+    /* .footer__socials {
         margin-bottom: 2.6rem;
-    }
+    } */
 }
