@@ -19,13 +19,16 @@ const Intro = () => {
             <article className="about__card">
               <RiHandCoinLine className="about__icon" />
               <h5>PIX:</h5>
-              <small>cavernadeadulaoct@gmail.com</small>
-              <p><small>Natanael D. T. Freitas</small></p>
+              <small>Para apoiar financeiramente, você pode fazer um pix para o nosso e-mail</small>
+              <br></br>
+              <a href="#contato" className="btn btn-primary">Ajudar</a>
             </article>
             <article className="about__card">
               <MdConstruction className="about__icon" />
-              <h5>Necessidades para o Projeto:</h5>
-              <small>Patrocinadores para construção da estrutura.</small>
+              <h5>Apoiadores:</h5>
+              <small>Você pode ser um patrocinador para construção da estrutura.</small>
+              <br></br>
+              <a href="#contato" className="btn btn-primary">Ajudar</a>
             </article>
           </div>
           <p>Há anos o desejo do nosso coração é montar uma Comunidade Terapêutica com voltada para a recuperação de dependentes químicos e de álcool.</p>

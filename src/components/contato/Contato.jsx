@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsTelephoneOutboundFill } from 'react-icons/bs';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './contato.css';
 
 const Contato = () => {
@@ -12,10 +13,10 @@ const Contato = () => {
     setMessage(true);
     emailjs
       .sendForm(
-        '',
-        '',
+        'service_bewdvub',
+        'template_jgag65a',
         formRef.current,
-        ''
+        'xHbo1isp_P5JfqwV_'
       )
       .then(
         (result) => {
@@ -34,12 +35,14 @@ const Contato = () => {
       <h2>Contato</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
+        <CopyToClipboard text="cavernadeadulaoct@gmail.com">
+          <article className="contact__option" onClick={()=>{ alert('Chave PIX foi copiada para a área de transferência :)'); }}>
             <MdOutlineEmail className="contact__option-icon" />
-            <h4>E-mail</h4>
-            <h5>cavernadeadulaoct@gmail.com</h5>
-            <a href="mailto:cavernadeadulaoct@gmail.com">Envie uma mensagem</a>
+            <h4>E-mail e PIX</h4>
+              <h5>cavernadeadulaoct@gmail.com</h5>
+            <h5>Clique para copiar</h5>
           </article>
+          </CopyToClipboard>
           <article className="contact__option">
             <BsTelephoneOutboundFill className="contact__option-icon" />
             <h4>Telefone</h4>
@@ -51,28 +54,25 @@ const Contato = () => {
           <input
             type="text"
             placeholder="Seu nome completo"
-            name="user_name"
+            name="from_name"
             required
-            disabled
           />
           <input
             type="text"
             placeholder="Seu melhor e-mail"
             name="user_email"
             required
-            disabled
           />
           <textarea
             placeholder="Mensagem"
             rows="3"
             name="message"
             required
-            disabled
           ></textarea>
-          <button type="submit" className="btn btn-primary disabled">
+          <button type="submit" className="btn btn-primary">
             Enviar
           </button>
-          {message && <span>Este formulário ainda não está funcionando, entre em contato pelo whatsapp (47)997915103 :)</span>}
+          {message && <span>Mensagem enviada, entraremos em contato pelo whatsapp (47)99791-5103 :)</span>}
         </form>
       </div>
     </section>
