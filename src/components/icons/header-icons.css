@@ -4,8 +4,8 @@
     align-items: center;
     gap: 0.8rem;
     position: fixed;
-    left: 5rem;
-    top: 7rem;
+    left: 1rem;
+    top: 1rem;
 }
 
 .header__socials a {

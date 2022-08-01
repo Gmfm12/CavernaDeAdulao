@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header id="home">
       <div className="container header__container">
-        <img src={logo} class="img-logo" alt="logo CTCA"></img>
+        <img src={logo} className="img-logo" alt="logo CTCA"></img>
         <h3>Comunidade Terapêutica</h3>
         <h1>Caverna de Adulão</h1>
         <h5 className="text-light"><i>Mas Deus escolheu as coisas loucas do mundo para envergonhar os sábios, e escolheu as coisas fracas do mundo para envergonhar as fortes.</i></h5>

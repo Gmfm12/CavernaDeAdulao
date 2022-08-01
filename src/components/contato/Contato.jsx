@@ -6,7 +6,8 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './contato.css';
 
 const Contato = () => {
-  const [message, setMessage] = useState(false);
+  const [phone, setPhone] = useState("");
+  const [message, setMessage,] = useState(false);
   const formRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -72,7 +73,7 @@ const Contato = () => {
           <button type="submit" className="btn btn-primary">
             Enviar
           </button>
-          {message && <span>Mensagem enviada, entraremos em contato pelo whatsapp (47)99791-5103 :)</span>}
+          {message && <span>Mensagem enviada, entraremos em contato :)</span>}
         </form>
       </div>
     </section>
